@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visor privado de documento personal." />
+    <title>Visor de documento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-header">
+        <p class="eyebrow">Documento personal</p>
+        <h1>Visor de documento</h1>
+        <p class="notice">Visor de documento personal — sitio no oficial</p>
+      </header>
+      <section class="viewer-card" aria-label="Vista previa del PDF">
+        <iframe id="pdf-viewer" class="pdf-viewer" src="/documento.pdf#view=FitH" title="Vista previa del documento PDF">
+          Tu navegador no puede mostrar este PDF. Usa el botón para abrirlo o descargarlo.
+        </iframe>
+      </section>
+      <section class="actions" aria-label="Acciones del documento">
+        <a class="button button-primary" id="download-button" href="/documento.pdf" download="documento.pdf">Descargar PDF</a>
+        <a class="button button-secondary" href="/documento.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+      </section>
+      <p class="replacement-note">Antes de publicar, reemplaza <code>public/documento.pdf</code> con el PDF original que deseas mostrar.</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
